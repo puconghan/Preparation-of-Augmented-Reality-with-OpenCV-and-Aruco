@@ -25,7 +25,7 @@ SET(aruco_INCLUDE_DIRS )
 LINK_DIRECTORIES("/usr/local/lib")
 #SET(aruco_LIB_DIR "")
 
-SET(aruco_LIBS  aruco) 
+SET(aruco_LIBS opencv_videostab;opencv_video;opencv_ts;opencv_superres;opencv_stitching;opencv_photo;opencv_ocl;opencv_objdetect;opencv_nonfree;opencv_ml;opencv_legacy;opencv_imgproc;opencv_highgui;opencv_gpu;opencv_flann;opencv_features2d;opencv_core;opencv_contrib;opencv_calib3d aruco) 
 
 SET(aruco_FOUND YES)
 SET(aruco_FOUND "YES")

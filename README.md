@@ -19,7 +19,7 @@ Tutorials for compiling OpenCV
         make -j8
         sudo make install
 
-        //This should now build OpenCV into your /usr/local/ directory and build directory.
+        //This should now build OpenCV and opencv2 into your /usr/local/ and /usr/include directories. A copy of these files will be saved in the build directory.
 
 Tutorials for compiling Aruco using Mac Terminal (Unix)
 
@@ -42,8 +42,15 @@ Tutorials for compiling Aruco using Mac Terminal (Unix)
         mkdir build
         cd build
         cmake ..
+	
+	//Now, we can make Aruco and install it to your machine
+	sudo make install
 
-        //This should now build Aruco into your build directory
+	//If your system library does not include the <gl.h> file from the OpenGL library, the make install process will be failed.
+	//You need to download my attached gl.h file and save it under /usr/include directory.
+
+        //This should now build Aruco into your build directory and /usr/include directory
+	
 
 Work consulted: http://tilomitra.com/opencv-on-mac-osx/
 Attached aruco-1.2.4 and opencv-2.4.8 have been compiled. You can get all needed library files from their build folder.

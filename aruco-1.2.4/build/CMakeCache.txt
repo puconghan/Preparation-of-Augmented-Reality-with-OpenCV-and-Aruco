@@ -207,12 +207,24 @@ OPENGL_gl_LIBRARY:FILEPATH=/System/Library/Frameworks/OpenGL.framework
 //AGL lib for OSX
 OPENGL_glu_LIBRARY:FILEPATH=/System/Library/Frameworks/AGL.framework
 
+//Path where debug 3rdpaty OpenCV dependencies are located
+OpenCV_3RDPARTY_LIB_DIR_DBG:PATH=
+
+//Path where release 3rdpaty OpenCV dependencies are located
+OpenCV_3RDPARTY_LIB_DIR_OPT:PATH=
+
 OpenCV_CONFIG_PATH:FILEPATH=/Users/puconghan/Desktop/aruco-1.2.4/opencv-2.4.8/cmake
 
 //The directory containing a CMake configuration file for OpenCV.
-OpenCV_DIR:PATH=OpenCV_DIR-NOTFOUND
+OpenCV_DIR:PATH=/usr/local/share/OpenCV
 
 OpenCV_FOUND:BOOL=FALSE
+
+//Path where debug OpenCV libraries are located
+OpenCV_LIB_DIR_DBG:PATH=
+
+//Path where release OpenCV libraries are located
+OpenCV_LIB_DIR_OPT:PATH=
 
 //Treat warnings as errors
 WARNINGS_ARE_ERRORS:BOOL=OFF
@@ -223,8 +235,8 @@ WHOLE_PROGRAM_OPTIMIZATION:BOOL=OFF
 //Value Computed by CMake
 aruco_BINARY_DIR:STATIC=/Users/puconghan/Desktop/aruco-1.2.4/build
 
-//Dependencies for target
-aruco_LIB_DEPENDS:STATIC=
+//Dependencies for the target
+aruco_LIB_DEPENDS:STATIC=general;opencv_videostab;general;opencv_video;general;opencv_ts;general;opencv_superres;general;opencv_stitching;general;opencv_photo;general;opencv_ocl;general;opencv_objdetect;general;opencv_nonfree;general;opencv_ml;general;opencv_legacy;general;opencv_imgproc;general;opencv_highgui;general;opencv_gpu;general;opencv_flann;general;opencv_features2d;general;opencv_core;general;opencv_contrib;general;opencv_calib3d;
 
 //Value Computed by CMake
 aruco_SOURCE_DIR:STATIC=/Users/puconghan/Desktop/aruco-1.2.4
@@ -373,4 +385,14 @@ OPENGL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 OPENGL_gl_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_glu_LIBRARY
 OPENGL_glu_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OpenCV_3RDPARTY_LIB_DIR_DBG
+OpenCV_3RDPARTY_LIB_DIR_DBG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OpenCV_3RDPARTY_LIB_DIR_OPT
+OpenCV_3RDPARTY_LIB_DIR_OPT-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OpenCV_CONFIG_PATH
+OpenCV_CONFIG_PATH-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OpenCV_LIB_DIR_DBG
+OpenCV_LIB_DIR_DBG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OpenCV_LIB_DIR_OPT
+OpenCV_LIB_DIR_OPT-ADVANCED:INTERNAL=1
 

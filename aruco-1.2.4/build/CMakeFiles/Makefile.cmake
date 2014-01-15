@@ -37,6 +37,10 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "/opt/local/share/cmake-2.8/Modules/Platform/Darwin.cmake"
   "/opt/local/share/cmake-2.8/Modules/Platform/UnixPaths.cmake"
   "/opt/local/share/cmake-2.8/Templates/CPackConfig.cmake.in"
+  "/usr/local/share/OpenCV/OpenCVConfig-version.cmake"
+  "/usr/local/share/OpenCV/OpenCVConfig.cmake"
+  "/usr/local/share/OpenCV/OpenCVModules-release.cmake"
+  "/usr/local/share/OpenCV/OpenCVModules.cmake"
   )
 
 # The corresponding makefile is:
