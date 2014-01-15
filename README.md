@@ -46,3 +46,4 @@ Tutorials for compiling Aruco using Mac Terminal (Unix)
         //This should now build Aruco into your build directory
 
 Work consulted: http://tilomitra.com/opencv-on-mac-osx/
+Attached aruco-1.2.4 and opencv-2.4.8 have been compiled. You can get all needed library files from their build folder.
