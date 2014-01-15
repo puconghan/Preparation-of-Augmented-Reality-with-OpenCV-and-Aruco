@@ -48,10 +48,7 @@ Tutorials for compiling Aruco using Mac Terminal (Unix)
 	//Now, we can make Aruco and install it to your machine
 	sudo make install
 
-	//If your system library does not include the <gl.h> file from the OpenGL library, the make install process will be failed.
-	//You need to download my attached gl.h file and save it under /usr/include directory.
-
-        //This should now build Aruco into your build directory and /usr/include directory
+	Notice: If your system library does not include the <gl.h> file from the OpenGL library, the make install process will be failed. You need to download my attached gl.h file and save it under /usr/include directory. Don't forget to run 'cmake ..' command and  'sudo make install' command again. This should now build Aruco into your build directory and /usr/include directory
 	
 
 Work consulted: http://tilomitra.com/opencv-on-mac-osx/
