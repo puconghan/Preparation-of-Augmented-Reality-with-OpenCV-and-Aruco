@@ -21,6 +21,8 @@ Tutorials for compiling OpenCV
 
         //This should now build OpenCV and opencv2 into your /usr/local/ and /usr/include directories. A copy of these files will be saved in the build directory.
 
+	Notice that if your /usr/local/ directory and /usr/include directory still does not have these opencv and opencv2 folders and files, you should 'sudo make install' under the 'build' folder again. It happens sometimes if you failed to sudo into your system with administrator credidential
+
 Tutorials for compiling Aruco using Mac Terminal (Unix)
 
 1. Download Aruco
