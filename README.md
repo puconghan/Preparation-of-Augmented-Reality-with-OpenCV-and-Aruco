@@ -20,6 +20,7 @@ Tutorials for compiling OpenCV
 	sudo make install
 
 	//This should now build OpenCV into your /usr/local/ directory and build directory.
+
 Tutorials for compiling Aruco using Mac Terminal (Unix)
 
 1. Download Aruco
@@ -38,12 +39,11 @@ Tutorials for compiling Aruco using Mac Terminal (Unix)
 	Type in the following:
 
         //make a separate directory for building
-        mkdir build
-        cd build
+	mkdir build
+	cd build
 	cmake ..
 
 	//This should now build Aruco into your build directory
-
 
 Work consulted: http://tilomitra.com/opencv-on-mac-osx/
 
