@@ -11,13 +11,13 @@ Tutorials for compiling OpenCV
 	In terminal, navigate to the folder where OpenCV was extracted to. Type in the following:
 
 	//make a separate directory for building
-	mkdir build
-	cd build
-	cmake -G "Unix Makefiles" ..
+	./mkdir build
+	./cd build
+	./cmake -G "Unix Makefiles" ..
 
 	//Now, we can make OpenCV. Type the following in:
-	make -j8
-	sudo make install
+	./make -j8
+	./sudo make install
 
 	//This should now build OpenCV into your /usr/local/ directory and build directory.
 
@@ -39,9 +39,9 @@ Tutorials for compiling Aruco using Mac Terminal (Unix)
 	Type in the following:
 
         //make a separate directory for building
-	mkdir build
-	cd build
-	cmake ..
+	./mkdir build
+	./cd build
+	./cmake ..
 
 	//This should now build Aruco into your build directory
 
