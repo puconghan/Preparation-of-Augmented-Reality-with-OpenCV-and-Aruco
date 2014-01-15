@@ -42,7 +42,7 @@ Tutorials for compiling Aruco using Mac Terminal (Unix)
         cd build
 	cmake ..
 
-	#This should now build Aruco into your build directory
+	//This should now build Aruco into your build directory
 
 
 Work consulted: http://tilomitra.com/opencv-on-mac-osx/
