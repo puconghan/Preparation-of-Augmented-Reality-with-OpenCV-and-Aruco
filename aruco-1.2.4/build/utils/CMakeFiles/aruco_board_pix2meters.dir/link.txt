@@ -1,0 +1,1 @@
+/usr/bin/c++   -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/aruco_board_pix2meters.dir/aruco_board_pix2meters.cpp.o  -o aruco_board_pix2meters  ../src/libaruco.1.2.4.dylib 

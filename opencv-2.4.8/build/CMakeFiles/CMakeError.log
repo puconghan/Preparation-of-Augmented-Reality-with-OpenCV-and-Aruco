@@ -1,0 +1,201 @@
+Determining size of off64_t failed with the following output:
+Change Dir: /Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1925062906/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1925062906.dir/build.make CMakeFiles/cmTryCompileExec1925062906.dir/build
+/opt/local/bin/cmake -E cmake_progress_report /Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1925062906.dir/OFF64_T.c.o
+/usr/bin/cc   -fsigned-char -W -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -msse -msse2 -msse3   -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec1925062906.dir/OFF64_T.c.o   -c /Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CheckTypeSize/OFF64_T.c
+/Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CheckTypeSize/OFF64_T.c:19:12: error: use of undeclared identifier 'off64_t'; did you mean 'off_t'?
+  ('0' + ((SIZE / 10000)%10)),
+           ^
+/Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CheckTypeSize/OFF64_T.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CheckTypeSize/OFF64_T.c:20:12: error: use of undeclared identifier 'off64_t'; did you mean 'off_t'?
+  ('0' + ((SIZE / 1000)%10)),
+           ^
+/Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CheckTypeSize/OFF64_T.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CheckTypeSize/OFF64_T.c:21:12: error: use of undeclared identifier 'off64_t'; did you mean 'off_t'?
+  ('0' + ((SIZE / 100)%10)),
+           ^
+/Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CheckTypeSize/OFF64_T.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CheckTypeSize/OFF64_T.c:22:12: error: use of undeclared identifier 'off64_t'; did you mean 'off_t'?
+  ('0' + ((SIZE / 10)%10)),
+           ^
+/Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CheckTypeSize/OFF64_T.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CheckTypeSize/OFF64_T.c:23:12: error: use of undeclared identifier 'off64_t'; did you mean 'off_t'?
+  ('0' +  (SIZE    % 10)),
+           ^
+/Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CheckTypeSize/OFF64_T.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec1925062906.dir/OFF64_T.c.o] Error 1
+make: *** [cmTryCompileExec1925062906/fast] Error 2
+
+/Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CheckTypeSize/OFF64_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(off64_t))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the include file io.h exists failed with the following output:
+Change Dir: /Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3081448956/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3081448956.dir/build.make CMakeFiles/cmTryCompileExec3081448956.dir/build
+/opt/local/bin/cmake -E cmake_progress_report /Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3081448956.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fsigned-char -W -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -msse -msse2 -msse3   -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec3081448956.dir/CheckIncludeFile.c.o   -c /Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'io.h' file not found
+#include <io.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec3081448956.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec3081448956/fast] Error 2
+
+
+Determining if the function jbg_newlen exists failed with the following output:
+Change Dir: /Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1960000939/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1960000939.dir/build.make CMakeFiles/cmTryCompileExec1960000939.dir/build
+/opt/local/bin/cmake -E cmake_progress_report /Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1960000939.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fsigned-char -W -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -msse -msse2 -msse3  -DCHECK_FUNCTION_EXISTS=jbg_newlen -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec1960000939.dir/CheckFunctionExists.c.o   -c /opt/local/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1960000939
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1960000939.dir/link.txt --verbose=1
+/usr/bin/cc      -fsigned-char -W -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -msse -msse2 -msse3  -DCHECK_FUNCTION_EXISTS=jbg_newlen -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1960000939.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1960000939  
+Undefined symbols for architecture x86_64:
+  "_jbg_newlen", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTryCompileExec1960000939] Error 1
+make: *** [cmTryCompileExec1960000939/fast] Error 2
+
+
+Determining if the include file linux/videodev.h exists failed with the following output:
+Change Dir: /Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec770016079/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec770016079.dir/build.make CMakeFiles/cmTryCompileExec770016079.dir/build
+/opt/local/bin/cmake -E cmake_progress_report /Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec770016079.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fsigned-char -W -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -msse -msse2 -msse3   -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec770016079.dir/CheckIncludeFile.c.o   -c /Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/videodev.h' file not found
+#include <linux/videodev.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec770016079.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec770016079/fast] Error 2
+
+
+Determining if the include file linux/videodev2.h exists failed with the following output:
+Change Dir: /Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3497924999/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3497924999.dir/build.make CMakeFiles/cmTryCompileExec3497924999.dir/build
+/opt/local/bin/cmake -E cmake_progress_report /Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3497924999.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fsigned-char -W -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -msse -msse2 -msse3   -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec3497924999.dir/CheckIncludeFile.c.o   -c /Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/videodev2.h' file not found
+#include <linux/videodev2.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec3497924999.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec3497924999/fast] Error 2
+
+
+Determining if the include file sys/videoio.h exists failed with the following output:
+Change Dir: /Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2156581781/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2156581781.dir/build.make CMakeFiles/cmTryCompileExec2156581781.dir/build
+/opt/local/bin/cmake -E cmake_progress_report /Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2156581781.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fsigned-char -W -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -msse -msse2 -msse3   -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec2156581781.dir/CheckIncludeFile.c.o   -c /Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'sys/videoio.h' file not found
+#include <sys/videoio.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec2156581781.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec2156581781/fast] Error 2
+
+
+Determining if the include file libavformat/avformat.h exists failed with the following output:
+Change Dir: /Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2423546165/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2423546165.dir/build.make CMakeFiles/cmTryCompileExec2423546165.dir/build
+/opt/local/bin/cmake -E cmake_progress_report /Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2423546165.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fsigned-char -W -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -msse -msse2 -msse3   -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec2423546165.dir/CheckIncludeFile.c.o   -c /Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'libavformat/avformat.h' file not found
+#include <libavformat/avformat.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec2423546165.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec2423546165/fast] Error 2
+
+
+Determining if the include file ffmpeg/avformat.h exists failed with the following output:
+Change Dir: /Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1305694695/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1305694695.dir/build.make CMakeFiles/cmTryCompileExec1305694695.dir/build
+/opt/local/bin/cmake -E cmake_progress_report /Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1305694695.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fsigned-char -W -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -fno-omit-frame-pointer -msse -msse2 -msse3   -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec1305694695.dir/CheckIncludeFile.c.o   -c /Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/puconghan/Desktop/opencv-2.4.8/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'ffmpeg/avformat.h' file not found
+#include <ffmpeg/avformat.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec1305694695.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec1305694695/fast] Error 2
+
+

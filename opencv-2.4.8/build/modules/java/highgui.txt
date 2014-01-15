@@ -1,0 +1,30 @@
+PORTED FUNCs LIST (16 of 16):
+
+ Mat imdecode(Mat buf, int flags)
+ bool imencode(string ext, Mat img, vector_uchar& buf, vector_int params = vector<int>())
+ Mat imread(string filename, int flags = 1)
+ bool imwrite(string filename, Mat img, vector_int params = vector<int>())
+  VideoCapture::VideoCapture()
+  VideoCapture::VideoCapture(string filename)
+  VideoCapture::VideoCapture(int device)
+ double VideoCapture::get(int propId)
+ bool VideoCapture::grab()
+ bool VideoCapture::isOpened()
+ bool VideoCapture::open(string filename)
+ bool VideoCapture::open(int device)
+ bool VideoCapture::read(Mat& image)
+ void VideoCapture::release()
+ bool VideoCapture::retrieve(Mat& image, int channel = 0)
+ bool VideoCapture::set(int propId, double value)
+
+SKIPPED FUNCs LIST (0 of 16):
+
+
+0 def args - 12 funcs
+1 def args - 4 funcs
+
+class as MAP:
+	
+
+class SIMPLE:
+	

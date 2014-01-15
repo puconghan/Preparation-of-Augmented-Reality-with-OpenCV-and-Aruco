@@ -1,0 +1,1 @@
+/usr/bin/c++   -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/aruco_create_board.dir/aruco_create_board.cpp.o  -o aruco_create_board  ../src/libaruco.1.2.4.dylib 

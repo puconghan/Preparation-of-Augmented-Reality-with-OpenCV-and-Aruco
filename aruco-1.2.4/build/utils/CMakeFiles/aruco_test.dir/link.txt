@@ -1,0 +1,1 @@
+/usr/bin/c++   -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/aruco_test.dir/aruco_test.cpp.o  -o aruco_test  ../src/libaruco.1.2.4.dylib 

@@ -1,0 +1,20 @@
+PORTED FUNCs LIST (5 of 5):
+
+ void fastNlMeansDenoising(Mat src, Mat& dst, float h = 3, int templateWindowSize = 7, int searchWindowSize = 21)
+ void fastNlMeansDenoisingColored(Mat src, Mat& dst, float h = 3, float hColor = 3, int templateWindowSize = 7, int searchWindowSize = 21)
+ void fastNlMeansDenoisingColoredMulti(vector_Mat srcImgs, Mat& dst, int imgToDenoiseIndex, int temporalWindowSize, float h = 3, float hColor = 3, int templateWindowSize = 7, int searchWindowSize = 21)
+ void fastNlMeansDenoisingMulti(vector_Mat srcImgs, Mat& dst, int imgToDenoiseIndex, int temporalWindowSize, float h = 3, int templateWindowSize = 7, int searchWindowSize = 21)
+ void inpaint(Mat src, Mat inpaintMask, Mat& dst, double inpaintRadius, int flags)
+
+SKIPPED FUNCs LIST (0 of 5):
+
+
+0 def args - 1 funcs
+3 def args - 2 funcs
+4 def args - 2 funcs
+
+class as MAP:
+	
+
+class SIMPLE:
+	

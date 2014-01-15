@@ -1,0 +1,68 @@
+PORTED FUNCs LIST (52 of 52):
+
+static javaFeatureDetector* javaFeatureDetector::create(int detectorType)
+ void javaFeatureDetector::detect(Mat image, vector_KeyPoint& keypoints, Mat mask = Mat())
+ void javaFeatureDetector::detect(vector_Mat images, vector_vector_KeyPoint& keypoints, vector_Mat masks = vector<Mat>())
+ bool javaFeatureDetector::empty()
+ void javaFeatureDetector::read(string fileName)
+ void javaFeatureDetector::write(string fileName)
+ void javaDescriptorMatcher::add(vector_Mat descriptors)
+ void javaDescriptorMatcher::clear()
+ javaDescriptorMatcher* javaDescriptorMatcher::jclone(bool emptyTrainData = false)
+static javaDescriptorMatcher* javaDescriptorMatcher::create(int matcherType)
+ bool javaDescriptorMatcher::empty()
+ vector_Mat javaDescriptorMatcher::getTrainDescriptors()
+ bool javaDescriptorMatcher::isMaskSupported()
+ void javaDescriptorMatcher::knnMatch(Mat queryDescriptors, Mat trainDescriptors, vector_vector_DMatch& matches, int k, Mat mask = Mat(), bool compactResult = false)
+ void javaDescriptorMatcher::knnMatch(Mat queryDescriptors, vector_vector_DMatch& matches, int k, vector_Mat masks = vector<Mat>(), bool compactResult = false)
+ void javaDescriptorMatcher::match(Mat queryDescriptors, Mat trainDescriptors, vector_DMatch& matches, Mat mask = Mat())
+ void javaDescriptorMatcher::match(Mat queryDescriptors, vector_DMatch& matches, vector_Mat masks = vector<Mat>())
+ void javaDescriptorMatcher::radiusMatch(Mat queryDescriptors, Mat trainDescriptors, vector_vector_DMatch& matches, float maxDistance, Mat mask = Mat(), bool compactResult = false)
+ void javaDescriptorMatcher::radiusMatch(Mat queryDescriptors, vector_vector_DMatch& matches, float maxDistance, vector_Mat masks = vector<Mat>(), bool compactResult = false)
+ void javaDescriptorMatcher::read(string fileName)
+ void javaDescriptorMatcher::train()
+ void javaDescriptorMatcher::write(string fileName)
+ void drawKeypoints(Mat image, vector_KeyPoint keypoints, Mat outImage, Scalar color = Scalar::all(-1), int flags = 0)
+ void drawMatches(Mat img1, vector_KeyPoint keypoints1, Mat img2, vector_KeyPoint keypoints2, vector_DMatch matches1to2, Mat outImg, Scalar matchColor = Scalar::all(-1), Scalar singlePointColor = Scalar::all(-1), vector_char matchesMask = vector<char>(), int flags = 0)
+ void drawMatches(Mat img1, vector_KeyPoint keypoints1, Mat img2, vector_KeyPoint keypoints2, vector_vector_DMatch matches1to2, Mat outImg, Scalar matchColor = Scalar::all(-1), Scalar singlePointColor = Scalar::all(-1), vector_vector_char matchesMask = vector<vector<char> >(), int flags = 0)
+ void javaDescriptorExtractor::compute(Mat image, vector_KeyPoint& keypoints, Mat descriptors)
+ void javaDescriptorExtractor::compute(vector_Mat images, vector_vector_KeyPoint& keypoints, vector_Mat& descriptors)
+static javaDescriptorExtractor* javaDescriptorExtractor::create(int extractorType)
+ int javaDescriptorExtractor::descriptorSize()
+ int javaDescriptorExtractor::descriptorType()
+ bool javaDescriptorExtractor::empty()
+ void javaDescriptorExtractor::read(string fileName)
+ void javaDescriptorExtractor::write(string fileName)
+ void javaGenericDescriptorMatcher::add(vector_Mat images, vector_vector_KeyPoint keypoints)
+ void javaGenericDescriptorMatcher::classify(Mat queryImage, vector_KeyPoint& queryKeypoints, Mat trainImage, vector_KeyPoint trainKeypoints)
+ void javaGenericDescriptorMatcher::classify(Mat queryImage, vector_KeyPoint& queryKeypoints)
+ void javaGenericDescriptorMatcher::clear()
+ javaGenericDescriptorMatcher* javaGenericDescriptorMatcher::jclone(bool emptyTrainData = false)
+static javaGenericDescriptorMatcher* javaGenericDescriptorMatcher::create(int matcherType)
+ bool javaGenericDescriptorMatcher::empty()
+ vector_Mat javaGenericDescriptorMatcher::getTrainImages()
+ vector_vector_KeyPoint javaGenericDescriptorMatcher::getTrainKeypoints()
+ bool javaGenericDescriptorMatcher::isMaskSupported()
+ void javaGenericDescriptorMatcher::knnMatch(Mat queryImage, vector_KeyPoint queryKeypoints, Mat trainImage, vector_KeyPoint trainKeypoints, vector_vector_DMatch& matches, int k, Mat mask = Mat(), bool compactResult = false)
+ void javaGenericDescriptorMatcher::knnMatch(Mat queryImage, vector_KeyPoint queryKeypoints, vector_vector_DMatch& matches, int k, vector_Mat masks = vector<Mat>(), bool compactResult = false)
+ void javaGenericDescriptorMatcher::match(Mat queryImage, vector_KeyPoint queryKeypoints, Mat trainImage, vector_KeyPoint trainKeypoints, vector_DMatch& matches, Mat mask = Mat())
+ void javaGenericDescriptorMatcher::match(Mat queryImage, vector_KeyPoint queryKeypoints, vector_DMatch& matches, vector_Mat masks = vector<Mat>())
+ void javaGenericDescriptorMatcher::radiusMatch(Mat queryImage, vector_KeyPoint queryKeypoints, Mat trainImage, vector_KeyPoint trainKeypoints, vector_vector_DMatch& matches, float maxDistance, Mat mask = Mat(), bool compactResult = false)
+ void javaGenericDescriptorMatcher::radiusMatch(Mat queryImage, vector_KeyPoint queryKeypoints, vector_vector_DMatch& matches, float maxDistance, vector_Mat masks = vector<Mat>(), bool compactResult = false)
+ void javaGenericDescriptorMatcher::read(string fileName)
+ void javaGenericDescriptorMatcher::train()
+ void javaGenericDescriptorMatcher::write(string fileName)
+
+SKIPPED FUNCs LIST (0 of 52):
+
+
+0 def args - 33 funcs
+1 def args - 8 funcs
+2 def args - 9 funcs
+4 def args - 2 funcs
+
+class as MAP:
+	
+
+class SIMPLE:
+	

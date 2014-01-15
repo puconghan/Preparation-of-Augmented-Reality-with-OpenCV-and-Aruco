@@ -1,0 +1,12 @@
+/Users/puconghan/Desktop/aruco-1.2.4/build/src/CMakeFiles/aruco.dir
+/Users/puconghan/Desktop/aruco-1.2.4/build/utils/CMakeFiles/aruco_board_pix2meters.dir
+/Users/puconghan/Desktop/aruco-1.2.4/build/utils/CMakeFiles/aruco_create_board.dir
+/Users/puconghan/Desktop/aruco-1.2.4/build/utils/CMakeFiles/aruco_create_marker.dir
+/Users/puconghan/Desktop/aruco-1.2.4/build/utils/CMakeFiles/aruco_selectoptimalmarkers.dir
+/Users/puconghan/Desktop/aruco-1.2.4/build/utils/CMakeFiles/aruco_simple.dir
+/Users/puconghan/Desktop/aruco-1.2.4/build/utils/CMakeFiles/aruco_simple_board.dir
+/Users/puconghan/Desktop/aruco-1.2.4/build/utils/CMakeFiles/aruco_test.dir
+/Users/puconghan/Desktop/aruco-1.2.4/build/utils/CMakeFiles/aruco_test_board.dir
+/Users/puconghan/Desktop/aruco-1.2.4/build/utils/CMakeFiles/aruco_test_board_gl.dir
+/Users/puconghan/Desktop/aruco-1.2.4/build/utils/CMakeFiles/aruco_test_gl.dir
+/Users/puconghan/Desktop/aruco-1.2.4/build/CMakeFiles/uninstall.dir

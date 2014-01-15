@@ -1,0 +1,172 @@
+PORTED FUNCs LIST (143 of 144):
+
+  EM::EM(int nclusters = EM::DEFAULT_NCLUSTERS, int covMatType = EM::COV_MAT_DIAGONAL, TermCriteria termCrit = TermCriteria(TermCriteria::COUNT+TermCriteria::EPS, EM::DEFAULT_MAX_ITERS, FLT_EPSILON))
+ void EM::clear()
+ bool EM::isTrained()
+ Vec2d EM::predict(Mat sample, Mat& probs = Mat())
+ bool EM::train(Mat samples, Mat& logLikelihoods = Mat(), Mat& labels = Mat(), Mat& probs = Mat())
+ bool EM::trainE(Mat samples, Mat means0, Mat covs0 = Mat(), Mat weights0 = Mat(), Mat& logLikelihoods = Mat(), Mat& labels = Mat(), Mat& probs = Mat())
+ bool EM::trainM(Mat samples, Mat probs0, Mat& logLikelihoods = Mat(), Mat& labels = Mat(), Mat& probs = Mat())
+  CvBoost::CvBoost()
+  CvBoost::CvBoost(Mat trainData, int tflag, Mat responses, Mat varIdx = cv::Mat(), Mat sampleIdx = cv::Mat(), Mat varType = cv::Mat(), Mat missingDataMask = cv::Mat(), CvBoostParams params = CvBoostParams())
+ void CvBoost::clear()
+ float CvBoost::predict(Mat sample, Mat missing = cv::Mat(), Range slice = cv::Range::all(), bool rawMode = false, bool returnSum = false)
+ void CvBoost::prune(CvSlice slice)
+ bool CvBoost::train(Mat trainData, int tflag, Mat responses, Mat varIdx = cv::Mat(), Mat sampleIdx = cv::Mat(), Mat varType = cv::Mat(), Mat missingDataMask = cv::Mat(), CvBoostParams params = CvBoostParams(), bool update = false)
+  CvRTrees::CvRTrees()
+ void CvRTrees::clear()
+ Mat CvRTrees::getVarImportance()
+ float CvRTrees::predict(Mat sample, Mat missing = cv::Mat())
+ float CvRTrees::predict_prob(Mat sample, Mat missing = cv::Mat())
+ bool CvRTrees::train(Mat trainData, int tflag, Mat responses, Mat varIdx = cv::Mat(), Mat sampleIdx = cv::Mat(), Mat varType = cv::Mat(), Mat missingDataMask = cv::Mat(), CvRTParams params = CvRTParams())
+  CvParamGrid::CvParamGrid()
+double CvParamGrid::min_val
+void CvParamGrid::min_val
+double CvParamGrid::max_val
+void CvParamGrid::max_val
+double CvParamGrid::step
+void CvParamGrid::step
+  CvGBTreesParams::CvGBTreesParams()
+int CvGBTreesParams::weak_count
+void CvGBTreesParams::weak_count
+int CvGBTreesParams::loss_function_type
+void CvGBTreesParams::loss_function_type
+float CvGBTreesParams::subsample_portion
+void CvGBTreesParams::subsample_portion
+float CvGBTreesParams::shrinkage
+void CvGBTreesParams::shrinkage
+ void CvStatModel::load(c_string filename, c_string name = 0)
+ void CvStatModel::save(c_string filename, c_string name = 0)
+  CvSVMParams::CvSVMParams()
+int CvSVMParams::svm_type
+void CvSVMParams::svm_type
+int CvSVMParams::kernel_type
+void CvSVMParams::kernel_type
+double CvSVMParams::degree
+void CvSVMParams::degree
+double CvSVMParams::gamma
+void CvSVMParams::gamma
+double CvSVMParams::coef0
+void CvSVMParams::coef0
+double CvSVMParams::C
+void CvSVMParams::C
+double CvSVMParams::nu
+void CvSVMParams::nu
+double CvSVMParams::p
+void CvSVMParams::p
+TermCriteria CvSVMParams::term_crit
+void CvSVMParams::term_crit
+  CvRTParams::CvRTParams()
+bool CvRTParams::calc_var_importance
+void CvRTParams::calc_var_importance
+int CvRTParams::nactive_vars
+void CvRTParams::nactive_vars
+TermCriteria CvRTParams::term_crit
+void CvRTParams::term_crit
+  CvDTree::CvDTree()
+ void CvDTree::clear()
+ Mat CvDTree::getVarImportance()
+ bool CvDTree::train(Mat trainData, int tflag, Mat responses, Mat varIdx = cv::Mat(), Mat sampleIdx = cv::Mat(), Mat varType = cv::Mat(), Mat missingDataMask = cv::Mat(), CvDTreeParams params = CvDTreeParams())
+  CvKNearest::CvKNearest()
+  CvKNearest::CvKNearest(Mat trainData, Mat responses, Mat sampleIdx = cv::Mat(), bool isRegression = false, int max_k = 32)
+ float CvKNearest::find_nearest(Mat samples, int k, Mat& results, Mat& neighborResponses, Mat& dists)
+ bool CvKNearest::train(Mat trainData, Mat responses, Mat sampleIdx = cv::Mat(), bool isRegression = false, int maxK = 32, bool updateBase = false)
+  CvERTrees::CvERTrees()
+ bool CvERTrees::train(Mat trainData, int tflag, Mat responses, Mat varIdx = cv::Mat(), Mat sampleIdx = cv::Mat(), Mat varType = cv::Mat(), Mat missingDataMask = cv::Mat(), CvRTParams params = CvRTParams())
+  CvANN_MLP_TrainParams::CvANN_MLP_TrainParams()
+TermCriteria CvANN_MLP_TrainParams::term_crit
+void CvANN_MLP_TrainParams::term_crit
+int CvANN_MLP_TrainParams::train_method
+void CvANN_MLP_TrainParams::train_method
+double CvANN_MLP_TrainParams::bp_dw_scale
+void CvANN_MLP_TrainParams::bp_dw_scale
+double CvANN_MLP_TrainParams::bp_moment_scale
+void CvANN_MLP_TrainParams::bp_moment_scale
+double CvANN_MLP_TrainParams::rp_dw0
+void CvANN_MLP_TrainParams::rp_dw0
+double CvANN_MLP_TrainParams::rp_dw_plus
+void CvANN_MLP_TrainParams::rp_dw_plus
+double CvANN_MLP_TrainParams::rp_dw_minus
+void CvANN_MLP_TrainParams::rp_dw_minus
+double CvANN_MLP_TrainParams::rp_dw_min
+void CvANN_MLP_TrainParams::rp_dw_min
+double CvANN_MLP_TrainParams::rp_dw_max
+void CvANN_MLP_TrainParams::rp_dw_max
+  CvNormalBayesClassifier::CvNormalBayesClassifier()
+  CvNormalBayesClassifier::CvNormalBayesClassifier(Mat trainData, Mat responses, Mat varIdx = cv::Mat(), Mat sampleIdx = cv::Mat())
+ void CvNormalBayesClassifier::clear()
+ float CvNormalBayesClassifier::predict(Mat samples, Mat* results = 0)
+ bool CvNormalBayesClassifier::train(Mat trainData, Mat responses, Mat varIdx = cv::Mat(), Mat sampleIdx = cv::Mat(), bool update = false)
+  CvBoostParams::CvBoostParams()
+int CvBoostParams::boost_type
+void CvBoostParams::boost_type
+int CvBoostParams::weak_count
+void CvBoostParams::weak_count
+int CvBoostParams::split_criteria
+void CvBoostParams::split_criteria
+double CvBoostParams::weight_trim_rate
+void CvBoostParams::weight_trim_rate
+  CvSVM::CvSVM()
+  CvSVM::CvSVM(Mat trainData, Mat responses, Mat varIdx = cv::Mat(), Mat sampleIdx = cv::Mat(), CvSVMParams params = CvSVMParams())
+ void CvSVM::clear()
+ int CvSVM::get_support_vector_count()
+ int CvSVM::get_var_count()
+ float CvSVM::predict(Mat sample, bool returnDFVal = false)
+ void CvSVM::predict(Mat samples, Mat& results)
+ bool CvSVM::train(Mat trainData, Mat responses, Mat varIdx = cv::Mat(), Mat sampleIdx = cv::Mat(), CvSVMParams params = CvSVMParams())
+ bool CvSVM::train_auto(Mat trainData, Mat responses, Mat varIdx, Mat sampleIdx, CvSVMParams params, int k_fold = 10, CvParamGrid Cgrid = CvSVM::get_default_grid(CvSVM::C), CvParamGrid gammaGrid = CvSVM::get_default_grid(CvSVM::GAMMA), CvParamGrid pGrid = CvSVM::get_default_grid(CvSVM::P), CvParamGrid nuGrid = CvSVM::get_default_grid(CvSVM::NU), CvParamGrid coeffGrid = CvSVM::get_default_grid(CvSVM::COEF), CvParamGrid degreeGrid = CvSVM::get_default_grid(CvSVM::DEGREE), bool balanced = false)
+  CvDTreeParams::CvDTreeParams()
+int CvDTreeParams::max_categories
+void CvDTreeParams::max_categories
+int CvDTreeParams::max_depth
+void CvDTreeParams::max_depth
+int CvDTreeParams::min_sample_count
+void CvDTreeParams::min_sample_count
+int CvDTreeParams::cv_folds
+void CvDTreeParams::cv_folds
+bool CvDTreeParams::use_surrogates
+void CvDTreeParams::use_surrogates
+bool CvDTreeParams::use_1se_rule
+void CvDTreeParams::use_1se_rule
+bool CvDTreeParams::truncate_pruned_tree
+void CvDTreeParams::truncate_pruned_tree
+float CvDTreeParams::regression_accuracy
+void CvDTreeParams::regression_accuracy
+  CvGBTrees::CvGBTrees()
+  CvGBTrees::CvGBTrees(Mat trainData, int tflag, Mat responses, Mat varIdx = cv::Mat(), Mat sampleIdx = cv::Mat(), Mat varType = cv::Mat(), Mat missingDataMask = cv::Mat(), CvGBTreesParams params = CvGBTreesParams())
+ void CvGBTrees::clear()
+ float CvGBTrees::predict(Mat sample, Mat missing = cv::Mat(), Range slice = cv::Range::all(), int k = -1)
+ bool CvGBTrees::train(Mat trainData, int tflag, Mat responses, Mat varIdx = cv::Mat(), Mat sampleIdx = cv::Mat(), Mat varType = cv::Mat(), Mat missingDataMask = cv::Mat(), CvGBTreesParams params = CvGBTreesParams(), bool update = false)
+  CvANN_MLP::CvANN_MLP()
+  CvANN_MLP::CvANN_MLP(Mat layerSizes, int activateFunc = CvANN_MLP::SIGMOID_SYM, double fparam1 = 0, double fparam2 = 0)
+ void CvANN_MLP::clear()
+ void CvANN_MLP::create(Mat layerSizes, int activateFunc = CvANN_MLP::SIGMOID_SYM, double fparam1 = 0, double fparam2 = 0)
+ float CvANN_MLP::predict(Mat inputs, Mat& outputs)
+ int CvANN_MLP::train(Mat inputs, Mat outputs, Mat sampleWeights, Mat sampleIdx = cv::Mat(), CvANN_MLP_TrainParams params = CvANN_MLP_TrainParams(), int flags = 0)
+
+SKIPPED FUNCs LIST (1 of 144):
+
+ CvDTreeNode* CvDTree::predict(Mat sample, Mat missingDataMask = cv::Mat(), bool preprocessedInput = false)
+// Return type 'CvDTreeNode*' is not supported, skipping the function
+
+
+0 def args - 26 funcs
+1 def args - 7 funcs
+2 def args - 2 funcs
+3 def args - 11 funcs
+4 def args - 2 funcs
+5 def args - 6 funcs
+6 def args - 2 funcs
+8 def args - 1 funcs
+
+class as MAP:
+	CvParamGrid
+	CvSVMParams
+	CvDTreeParams
+	CvRTParams
+	CvBoostParams
+	CvGBTreesParams
+	CvANN_MLP_TrainParams
+
+class SIMPLE:
+	

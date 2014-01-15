@@ -1,0 +1,59 @@
+PORTED FUNCs LIST (34 of 37):
+
+ void applyColorMap(Mat src, Mat& dst, int colormap)
+ int chamerMatching(Mat img, Mat templ, vector_vector_Point& results, vector_float& cost, double templScale = 1, int maxMatches = 20, double minMatchDistance = 1.0, int padX = 3, int padY = 3, int scales = 5, double minScale = 0.6, double maxScale = 1.6, double orientationWeight = 0.5, double truncate = 20)
+ void FaceRecognizer::load(string filename)
+ void FaceRecognizer::predict(Mat src, int& label, double& confidence)
+ void FaceRecognizer::save(string filename)
+ void FaceRecognizer::train(vector_Mat src, Mat labels)
+ void FaceRecognizer::update(vector_Mat src, Mat labels)
+  StereoVar::StereoVar()
+  StereoVar::StereoVar(int levels, double pyrScale, int nIt, int minDisp, int maxDisp, int poly_n, double poly_sigma, float fi, float lambda, int penalization, int cycle, int flags)
+ void StereoVar::operator ()(Mat left, Mat right, Mat& disp)
+int StereoVar::levels
+void StereoVar::levels
+double StereoVar::pyrScale
+void StereoVar::pyrScale
+int StereoVar::nIt
+void StereoVar::nIt
+int StereoVar::minDisp
+void StereoVar::minDisp
+int StereoVar::maxDisp
+void StereoVar::maxDisp
+int StereoVar::poly_n
+void StereoVar::poly_n
+double StereoVar::poly_sigma
+void StereoVar::poly_sigma
+float StereoVar::fi
+void StereoVar::fi
+float StereoVar::lambda
+void StereoVar::lambda
+int StereoVar::penalization
+void StereoVar::penalization
+int StereoVar::cycle
+void StereoVar::cycle
+int StereoVar::flags
+void StereoVar::flags
+
+SKIPPED FUNCs LIST (3 of 37):
+
+ Ptr_FaceRecognizer createEigenFaceRecognizer(int num_components = 0, double threshold = DBL_MAX)
+// Return type 'Ptr_FaceRecognizer' is not supported, skipping the function
+
+ Ptr_FaceRecognizer createFisherFaceRecognizer(int num_components = 0, double threshold = DBL_MAX)
+// Return type 'Ptr_FaceRecognizer' is not supported, skipping the function
+
+ Ptr_FaceRecognizer createLBPHFaceRecognizer(int radius = 1, int neighbors = 8, int grid_x = 8, int grid_y = 8, double threshold = DBL_MAX)
+// Return type 'Ptr_FaceRecognizer' is not supported, skipping the function
+
+
+0 def args - 9 funcs
+10 def args - 1 funcs
+2 def args - 2 funcs
+5 def args - 1 funcs
+
+class as MAP:
+	
+
+class SIMPLE:
+	

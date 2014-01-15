@@ -1,0 +1,82 @@
+PORTED FUNCs LIST (59 of 60):
+
+  StereoSGBM::StereoSGBM()
+  StereoSGBM::StereoSGBM(int minDisparity, int numDisparities, int SADWindowSize, int P1 = 0, int P2 = 0, int disp12MaxDiff = 0, int preFilterCap = 0, int uniquenessRatio = 0, int speckleWindowSize = 0, int speckleRange = 0, bool fullDP = false)
+ void StereoSGBM::operator ()(Mat left, Mat right, Mat& disp)
+int StereoSGBM::minDisparity
+void StereoSGBM::minDisparity
+int StereoSGBM::numberOfDisparities
+void StereoSGBM::numberOfDisparities
+int StereoSGBM::SADWindowSize
+void StereoSGBM::SADWindowSize
+int StereoSGBM::preFilterCap
+void StereoSGBM::preFilterCap
+int StereoSGBM::uniquenessRatio
+void StereoSGBM::uniquenessRatio
+int StereoSGBM::P1
+void StereoSGBM::P1
+int StereoSGBM::P2
+void StereoSGBM::P2
+int StereoSGBM::speckleWindowSize
+void StereoSGBM::speckleWindowSize
+int StereoSGBM::speckleRange
+void StereoSGBM::speckleRange
+int StereoSGBM::disp12MaxDiff
+void StereoSGBM::disp12MaxDiff
+bool StereoSGBM::fullDP
+void StereoSGBM::fullDP
+  StereoBM::StereoBM()
+  StereoBM::StereoBM(int preset, int ndisparities = 0, int SADWindowSize = 21)
+ void StereoBM::operator ()(Mat left, Mat right, Mat& disparity, int disptype = CV_16S)
+ Vec3d RQDecomp3x3(Mat src, Mat& mtxR, Mat& mtxQ, Mat& Qx = Mat(), Mat& Qy = Mat(), Mat& Qz = Mat())
+ void Rodrigues(Mat src, Mat& dst, Mat& jacobian = Mat())
+ double calibrateCamera(vector_Mat objectPoints, vector_Mat imagePoints, Size imageSize, Mat& cameraMatrix, Mat& distCoeffs, vector_Mat& rvecs, vector_Mat& tvecs, int flags = 0, TermCriteria criteria = TermCriteria( TermCriteria::COUNT+TermCriteria::EPS, 30, DBL_EPSILON))
+ void calibrationMatrixValues(Mat cameraMatrix, Size imageSize, double apertureWidth, double apertureHeight, double& fovx, double& fovy, double& focalLength, Point2d& principalPoint, double& aspectRatio)
+ void composeRT(Mat rvec1, Mat tvec1, Mat rvec2, Mat tvec2, Mat& rvec3, Mat& tvec3, Mat& dr3dr1 = Mat(), Mat& dr3dt1 = Mat(), Mat& dr3dr2 = Mat(), Mat& dr3dt2 = Mat(), Mat& dt3dr1 = Mat(), Mat& dt3dt1 = Mat(), Mat& dt3dr2 = Mat(), Mat& dt3dt2 = Mat())
+ void computeCorrespondEpilines(Mat points, int whichImage, Mat F, Mat& lines)
+ void convertPointsFromHomogeneous(Mat src, Mat& dst)
+ void convertPointsToHomogeneous(Mat src, Mat& dst)
+ void correctMatches(Mat F, Mat points1, Mat points2, Mat& newPoints1, Mat& newPoints2)
+ void decomposeProjectionMatrix(Mat projMatrix, Mat& cameraMatrix, Mat& rotMatrix, Mat& transVect, Mat& rotMatrixX = Mat(), Mat& rotMatrixY = Mat(), Mat& rotMatrixZ = Mat(), Mat& eulerAngles = Mat())
+ void drawChessboardCorners(Mat& image, Size patternSize, vector_Point2f corners, bool patternWasFound)
+ int estimateAffine3D(Mat src, Mat dst, Mat& out, Mat& inliers, double ransacThreshold = 3, double confidence = 0.99)
+ void filterSpeckles(Mat& img, double newVal, int maxSpeckleSize, double maxDiff, Mat& buf = Mat())
+ bool findChessboardCorners(Mat image, Size patternSize, vector_Point2f& corners, int flags = CALIB_CB_ADAPTIVE_THRESH+CALIB_CB_NORMALIZE_IMAGE)
+ bool findCirclesGridDefault(Mat image, Size patternSize, Mat& centers, int flags = CALIB_CB_SYMMETRIC_GRID)
+ Mat findFundamentalMat(vector_Point2f points1, vector_Point2f points2, int method = FM_RANSAC, double param1 = 3., double param2 = 0.99, Mat& mask = Mat())
+ Mat findHomography(vector_Point2f srcPoints, vector_Point2f dstPoints, int method = 0, double ransacReprojThreshold = 3, Mat& mask = Mat())
+ Mat getOptimalNewCameraMatrix(Mat cameraMatrix, Mat distCoeffs, Size imageSize, double alpha, Size newImgSize = Size(), Rect* validPixROI = 0, bool centerPrincipalPoint = false)
+ Rect getValidDisparityROI(Rect roi1, Rect roi2, int minDisparity, int numberOfDisparities, int SADWindowSize)
+ Mat initCameraMatrix2D(vector_vector_Point3f objectPoints, vector_vector_Point2f imagePoints, Size imageSize, double aspectRatio = 1.)
+ void matMulDeriv(Mat A, Mat B, Mat& dABdA, Mat& dABdB)
+ void projectPoints(vector_Point3f objectPoints, Mat rvec, Mat tvec, Mat cameraMatrix, vector_double distCoeffs, vector_Point2f& imagePoints, Mat& jacobian = Mat(), double aspectRatio = 0)
+ float rectify3Collinear(Mat cameraMatrix1, Mat distCoeffs1, Mat cameraMatrix2, Mat distCoeffs2, Mat cameraMatrix3, Mat distCoeffs3, vector_Mat imgpt1, vector_Mat imgpt3, Size imageSize, Mat R12, Mat T12, Mat R13, Mat T13, Mat& R1, Mat& R2, Mat& R3, Mat& P1, Mat& P2, Mat& P3, Mat& Q, double alpha, Size newImgSize, Rect* roi1, Rect* roi2, int flags)
+ void reprojectImageTo3D(Mat disparity, Mat& _3dImage, Mat Q, bool handleMissingValues = false, int ddepth = -1)
+ bool solvePnP(vector_Point3f objectPoints, vector_Point2f imagePoints, Mat cameraMatrix, vector_double distCoeffs, Mat& rvec, Mat& tvec, bool useExtrinsicGuess = false, int flags = ITERATIVE)
+ void solvePnPRansac(vector_Point3f objectPoints, vector_Point2f imagePoints, Mat cameraMatrix, vector_double distCoeffs, Mat& rvec, Mat& tvec, bool useExtrinsicGuess = false, int iterationsCount = 100, float reprojectionError = 8.0, int minInliersCount = 100, Mat& inliers = Mat(), int flags = ITERATIVE)
+ double stereoCalibrate(vector_Mat objectPoints, vector_Mat imagePoints1, vector_Mat imagePoints2, Mat& cameraMatrix1, Mat& distCoeffs1, Mat& cameraMatrix2, Mat& distCoeffs2, Size imageSize, Mat& R, Mat& T, Mat& E, Mat& F, TermCriteria criteria = TermCriteria(TermCriteria::COUNT+TermCriteria::EPS, 30, 1e-6), int flags = CALIB_FIX_INTRINSIC)
+ void stereoRectify(Mat cameraMatrix1, Mat distCoeffs1, Mat cameraMatrix2, Mat distCoeffs2, Size imageSize, Mat R, Mat T, Mat& R1, Mat& R2, Mat& P1, Mat& P2, Mat& Q, int flags = CALIB_ZERO_DISPARITY, double alpha = -1, Size newImageSize = Size(), Rect* validPixROI1 = 0, Rect* validPixROI2 = 0)
+ bool stereoRectifyUncalibrated(Mat points1, Mat points2, Mat F, Size imgSize, Mat& H1, Mat& H2, double threshold = 5)
+ void triangulatePoints(Mat projMatr1, Mat projMatr2, Mat projPoints1, Mat projPoints2, Mat& points4D)
+ void validateDisparity(Mat& disparity, Mat cost, int minDisparity, int numberOfDisparities, int disp12MaxDisp = 1)
+
+SKIPPED FUNCs LIST (1 of 60):
+
+ bool findCirclesGrid(Mat image, Size patternSize, Mat& centers, int flags = CALIB_CB_SYMMETRIC_GRID, Ptr_FeatureDetector blobDetector = new SimpleBlobDetector())
+// Unknown type 'Ptr_FeatureDetector' (I), skipping the function
+
+
+0 def args - 13 funcs
+1 def args - 8 funcs
+2 def args - 8 funcs
+3 def args - 3 funcs
+4 def args - 2 funcs
+5 def args - 1 funcs
+6 def args - 1 funcs
+8 def args - 2 funcs
+
+class as MAP:
+	
+
+class SIMPLE:
+	

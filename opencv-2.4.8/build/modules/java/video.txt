@@ -1,0 +1,38 @@
+PORTED FUNCs LIST (21 of 21):
+
+ void BackgroundSubtractor::operator ()(Mat image, Mat& fgmask, double learningRate = 0)
+ RotatedRect CamShift(Mat probImage, Rect& window, TermCriteria criteria)
+ int buildOpticalFlowPyramid(Mat img, vector_Mat& pyramid, Size winSize, int maxLevel, bool withDerivatives = true, int pyrBorder = BORDER_REFLECT_101, int derivBorder = BORDER_CONSTANT, bool tryReuseInputImage = true)
+ double calcGlobalOrientation(Mat orientation, Mat mask, Mat mhi, double timestamp, double duration)
+ void calcMotionGradient(Mat mhi, Mat& mask, Mat& orientation, double delta1, double delta2, int apertureSize = 3)
+ void calcOpticalFlowFarneback(Mat prev, Mat next, Mat& flow, double pyr_scale, int levels, int winsize, int iterations, int poly_n, double poly_sigma, int flags)
+ void calcOpticalFlowPyrLK(Mat prevImg, Mat nextImg, vector_Point2f prevPts, vector_Point2f& nextPts, vector_uchar& status, vector_float& err, Size winSize = Size(21,21), int maxLevel = 3, TermCriteria criteria = TermCriteria(TermCriteria::COUNT+TermCriteria::EPS, 30, 0.01), int flags = 0, double minEigThreshold = 1e-4)
+ void calcOpticalFlowSF(Mat from, Mat to, Mat flow, int layers, int averaging_block_size, int max_flow)
+ void calcOpticalFlowSF(Mat from, Mat to, Mat flow, int layers, int averaging_block_size, int max_flow, double sigma_dist, double sigma_color, int postprocess_window, double sigma_dist_fix, double sigma_color_fix, double occ_thr, int upscale_averaging_radius, double upscale_sigma_dist, double upscale_sigma_color, double speed_up_thr)
+ Mat estimateRigidTransform(Mat src, Mat dst, bool fullAffine)
+ int meanShift(Mat probImage, Rect& window, TermCriteria criteria)
+ void segmentMotion(Mat mhi, Mat& segmask, vector_Rect& boundingRects, double timestamp, double segThresh)
+ void updateMotionHistory(Mat silhouette, Mat& mhi, double timestamp, double duration)
+  KalmanFilter::KalmanFilter()
+  KalmanFilter::KalmanFilter(int dynamParams, int measureParams, int controlParams = 0, int type = CV_32F)
+ Mat KalmanFilter::correct(Mat measurement)
+ Mat KalmanFilter::predict(Mat control = Mat())
+  BackgroundSubtractorMOG2::BackgroundSubtractorMOG2()
+  BackgroundSubtractorMOG2::BackgroundSubtractorMOG2(int history, float varThreshold, bool bShadowDetection = true)
+  BackgroundSubtractorMOG::BackgroundSubtractorMOG()
+  BackgroundSubtractorMOG::BackgroundSubtractorMOG(int history, int nmixtures, double backgroundRatio, double noiseSigma = 0)
+
+SKIPPED FUNCs LIST (0 of 21):
+
+
+0 def args - 13 funcs
+1 def args - 5 funcs
+2 def args - 1 funcs
+4 def args - 1 funcs
+5 def args - 1 funcs
+
+class as MAP:
+	
+
+class SIMPLE:
+	
